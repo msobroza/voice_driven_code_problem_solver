@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "code_interview_webapp"
+version = "0.1.0"
+description = "Coding interview with speech recognition and LLMs"
+authors = ["Max Sobroza"]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests="2.31.0"
+beautifulsoup4="4.12.2"
+tqdm="4.64.1"
+langchain = "0.0.199"
+openai = "0.27.8"
+streamlit = "1.25.0"
+websockets = "11.0.3"
+asyncio = "3.4.3"
+pyaudio = "0.2.13"
+pathlib = "1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+requests-mock = "^1.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
