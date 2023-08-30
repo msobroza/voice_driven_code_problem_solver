@@ -18,6 +18,7 @@ asyncio = "3.4.3"
 pathlib = "1.0.1"
 pyaudio = {git = "https://github.com/jleb/pyaudio.git"}
 sounddevice = "^0.4.6"
+rapidfuzz = "3.2.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -27,3 +28,4 @@ requests-mock = "^1.11.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
