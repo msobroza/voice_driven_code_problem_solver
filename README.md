@@ -18,6 +18,7 @@ Transform your spoken code problems into Python solutions! This Streamlit applic
 - `pyaudio`
 - `langchain`
 - 🔑 Appropriate API keys for AssemblyAI and OpenAI.
+- 📦 `poetry` for package management.
 
 ## 🚀 Installation:
 1. Clone the repository:
@@ -30,9 +31,14 @@ Transform your spoken code problems into Python solutions! This Streamlit applic
    cd voice_driven_code_problem_solver
    ```
 
-3. 📦 Install the required Python packages (assuming you're using pip):
+3. 📦 Install the required Python packages using `poetry`:
    ```
-   pip install streamlit websockets asyncio base64 json rapidfuzz pyaudio langchain
+   poetry install
+   ```
+
+4. Activate the poetry environment:
+   ```
+   poetry shell
    ```
 
 ## 🖥️ Usage:
@@ -53,7 +59,8 @@ Transform your spoken code problems into Python solutions! This Streamlit applic
 
 ## 📌 Notes:
 - 🔐 Ensure you've set up the required API keys in `configure.py`.
-- 🎧 This application assumes a decent quality microphone for optimal transcription accuracy.
+- 🎧 This application assumes a decent-quality microphone for optimal transcription accuracy.
 
 ## 🤝 Contributing:
 Contributions to improve the functionality and efficiency of the app are always welcome. Please fork the repository, make your changes, and submit a pull request.
+
