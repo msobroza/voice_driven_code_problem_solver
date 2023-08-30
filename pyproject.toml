@@ -15,8 +15,9 @@ openai = "0.27.8"
 streamlit = "1.25.0"
 websockets = "11.0.3"
 asyncio = "3.4.3"
-pyaudio = "0.2.13"
 pathlib = "1.0.1"
+pyaudio = {git = "https://github.com/jleb/pyaudio.git"}
+sounddevice = "^0.4.6"
 
 
 [tool.poetry.group.dev.dependencies]
