@@ -106,7 +106,7 @@ async def receive(ws):
                 if len(result) > 0:
                     st.session_state['all'].append(result)
                 if check_end_problem_definition(result) > 90:
-                    st.markdown(result)
+                    st.markdown("\n ".join(st.session_state['all']))
                     text_question = summary_last_question_into_topics(st.session_state['all'][:-1])
                     st.markdown(code_solving_in_python(text_question))
         except (websockets.exceptions.ConnectionClosedError, Exception) as e:
