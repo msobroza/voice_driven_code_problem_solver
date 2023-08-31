@@ -53,9 +53,11 @@ Transform your spoken code problems into Python solutions! This Streamlit applic
 
 4. 🗣️ Speak your coding problem clearly into your microphone.
 
-5. 🔴 Click on "Stop listening" when done.
+5. 📢 Before stopping, speak the phrase "let me think" to prompt the system to start solving the problem.
 
-6. ⏳ Wait for the app to display the transcribed problem and its Python solution.
+6. 🔴 Click on "Stop listening" when done.
+
+7. ⏳ Wait for the app to display the transcribed problem and its Python solution.
 
 ## 📌 Notes:
 - 🔐 Ensure you've set up the required API keys in `configure.py`.

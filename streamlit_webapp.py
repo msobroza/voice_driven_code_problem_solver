@@ -19,6 +19,7 @@ FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 16000
 URL = "wss://api.assemblyai.com/v2/realtime/ws?sample_rate=16000"
+END_PROBLEM = "let me think"
 
 # Audio setup
 p = pyaudio.PyAudio()
@@ -51,7 +52,7 @@ def init_session_state():
 
 def check_end_problem_definition(text):
     """Check if the user has ended the problem definition based on fuzzy matching."""
-    return fuzz.partial_ratio(text.lower(), "let me think")
+    return fuzz.partial_ratio(text.lower(), END_PROBLEM)
 
 
 def summary_last_question_into_topics(dialogs):
