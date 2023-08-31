@@ -59,6 +59,11 @@ Transform your spoken code problems into Python solutions! This Streamlit applic
 
 ## 📌 Notes:
 - 🔐 Ensure you've set up the required API keys in `configure.py`.
+Like:
+```
+auth_key="****************************"
+openai_api_key="****************************"
+```
 - 🎧 This application assumes a decent-quality microphone for optimal transcription accuracy.
 
 ## 🤝 Contributing:
